@@ -1,0 +1,90 @@
+
+.jl{
+    margin-left: 70px;
+}
+.l1{
+    border: 2px solid black;  
+    display: flex;
+    align-items: center;
+    background-color: rgb(166, 70, 70);
+}
+
+.l2 {
+    position: relative;
+    display: inline-block;
+}
+
+.l2 input {
+    width: 500px;
+    margin-left: 80px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding-right: 35px;
+    border: 2px solid #000;
+    background-color: white;
+}
+
+.l2 .icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 18px;
+    background: url('../images/aklup.jpg') no-repeat center;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.l4 { 
+    margin-left: 50px;
+    border: 2px solid black;
+    padding: 8px 22px;
+    border-radius: 30px;
+    background-color: burlywood;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.l4:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.1);
+}
+
+.l5 {
+    background-color: #d39519;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.l6 {
+    border: 2px solid black;
+    padding: 8px 22px;
+    border-radius: 30px; /* bo tròn đều, đẹp */
+    background-color: burlywood;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.l6:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* TRANG ĐANG Ở */
+.l6.active {
+    background-color: #ff5722;
+    color: white;
+    border-color: #000;
+}
