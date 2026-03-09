@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* HEADER */
+.jl { margin-left: 60px; }
+
+.l1{
+    border: 2px solid black;  
+      display: flex;
+    align-items: center;
+    color: white;
+    background-color:black !important;
+}
+
+.l2 {
+  position: relative;
+  display: inline-block;
+}
+
+.l2 input {
+  width: 500px;
+  margin-left: 80px;
+  border-radius: 20px;
+  font-size: 15px;
+  padding-right: 35px;
+  border: 2px solid #000;
+  background-color: white;
+}
+
+.l2 .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+/* GIỎ HÀNG */
+.l4 {
+    margin-left: 30px;
+    border: 2px solid black;
+    padding: 8px 22px;
+    border-radius: 30px;
+    background-color: burlywood;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.l4:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* MENU */
+.l5 {
+    background-color: #d39519;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.l6 {
+    border: 2px solid black;
+    padding: 8px 22px;
+    border-radius: 30px;
+    background-color: burlywood;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.l6:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.1);
+}
+
+.l6.active {
+    background-color: #ff5722;
+    color: white;
+}
+
+.l7{
+    width:100%;
+    padding:40px 0;
+}
+
+/* ================= TITLE ================= */
+.title{
+    text-align:center;
+    color:#ff6a00;
+    margin:30px 0;
+}
+
+/* ================= SLIDER ================= */
+.slider{
+    width:90%;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.slides{
+    display:flex;
+}
+
+.slide{
+    min-width:100%;
+    position:relative;
+}
+
+.slide img{
+    width:100%;
+    height:420px;
+    object-fit:contain;
+}
+
+.slide-text{
+    position:absolute;
+    left:50px;
+    bottom:60px;
+    background:rgba(0,0,0,0.65);
+    color:white;
+    padding:20px;
+    border-radius:15px;
+    width:420px;
+}
+
+.prev,.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:#ff7a00;
+    border:none;
+    color:white;
+    font-size:18px;
+    padding:10px 14px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.prev{left:30px;}
+.next{right:30px;}
+
+/* ================= NEWS GRID ================= */
+.news-grid{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.news-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.news-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.news-card h4{
+    padding:12px;
+}
+
+.news-card p{
+    padding:0 12px 16px;
+    color:#555;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+    background:black;
+    color:#ff7a00;
+    padding:20px;
+    text-align:center;
+}
+.user-menu{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none; /* ẩn mặc định */
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 9999;
+}
+
+.dropdown-menu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover{
+    background: #f3f3f3;
+}
